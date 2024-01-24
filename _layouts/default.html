@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/academicons-1.9.4/css/academicons.min.css">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <meta name="keywords" content="Viktor,Rosenfeld,TU,Technische,Universität,Berlin,HU,Humboldt"/>
+  </head>
+
+
+<body>
+
+ <div class="container">
+    {{ content }}
+    <hr>
+</div>
+    
+<p class="text-center text-muted" style="">
+  <small>
+    &copy; Viktor Rosenfeld &bullet; 
+    Last Update: {{ site.time | date_to_string }} &bullet;
+    Build with: <a href="https://jekyllrb.com/">Jekyll</a>,
+                <a href="https://getbootstrap.com/">Bootstrap</a>, 
+                <a href="https://fontawesome.com/">Font awesome</a>,
+                <a href="https://jpswalsh.github.io/academicons/">Academicons</a>
+  </small>
+</p>
+
+    <!-- - - - - - - - REST OF INCLUDES - - - - - - - - -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

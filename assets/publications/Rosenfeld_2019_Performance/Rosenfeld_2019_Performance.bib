@@ -1,0 +1,16 @@
+@inproceedings{Rosenfeld_2019_Performance,
+author = {Rosenfeld, Viktor and Bre\ss{}, Sebastian and Zeuch, Steffen and Rabl, Tilmann and Markl, Volker},
+title = {Performance Analysis and Automatic Tuning of Hash Aggregation on GPUs},
+year = {2019},
+isbn = {9781450368018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3329785.3329922},
+doi = {10.1145/3329785.3329922},
+abstract = {Hash aggregation is an important data processing primitive which can be significantly accelerated by modern graphics processors (GPUs). Previous work derived heuristics for GPU-accelerated hash aggregation from the study of a particular GPU. In this paper, we examine the influence of different execution parameters on GPU-accelerated hash aggregation on four NVIDIA and two AMD GPUs based on six different microarchitectures. While we are able to replicate some of the previous results, our main finding is that optimal execution parameters are highly GPU-dependent. Most importantly, execution parameters optimized for a specific GPU are up to 21x slower on other GPUs. Given this hardware dependency, we present an algorithm to optimize execution parameters at runtime. On average, our algorithm converges on a result in less than 1\% of the time required for a full evaluation of the search space. In this time, it finds execution parameters that are at most 1\% slower than the optimum in 90\% of our experiments. In the worst case, our algorithm finds execution parameters that are at most 1.29x slower than the optimum.},
+booktitle = {Proceedings of the 15th International Workshop on Data Management on New Hardware},
+articleno = {8},
+numpages = {11},
+location = {Amsterdam, Netherlands},
+series = {DaMoN'19}
+}

@@ -1,0 +1,28 @@
+.dl-contact dt {
+  float: left;
+  width: 15px;
+  overflow: hidden;
+  clear: left;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dl-contact dd {
+  margin-left: 25px;
+}
+.dl-contact dd:before,
+.dl-contact dd:after {
+  display: table;
+  content: " ";
+}
+.dl-contact dd:after {
+  clear: both;
+}
+.dl-contact dd:before,
+.dl-contact dd:after {
+  display: table;
+  content: " ";
+}
+.dl-contact dd:after {
+  clear: both;
+}

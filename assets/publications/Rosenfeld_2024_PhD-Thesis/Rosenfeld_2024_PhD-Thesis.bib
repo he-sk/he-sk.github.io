@@ -1,0 +1,20 @@
+@phdthesis{Rosenfeld_2024_Query,
+	abstract = {Today's computing systems are highly heterogeneous, both in terms of the hardware that they are built from and the software that they run. This heterogeneity provides key benefits, since specialized processors provide the performance necessary to process increasing amounts of data, and specialized software system enable programmers with different needs and expertise to extract knowledge from data. However, the integration of heterogeneous hardware and software into a cohesive system poses many challenges, e.g., how to distribute work among heterogeneous processors, how to reduce the complexity of programming heterogeneous processors, and how to reduce overheads when moving data and computation between different software systems.
+
+In this thesis, we investigate how heterogeneous hardware and software impacts query processing, and develop tools to manage this heterogeneity.
+
+In our first contribution, we survey query processing systems that target both CPUs and GPUs. We develop a classification scheme to categorize how to distribute query processing tasks on these processors, and review techniques to program CPUs and GPUs in a query processing system, and to overcome the data transfer bottleneck. Our analysis shows that systems with dedicated GPUs require different strategies to distribute the workload than systems with integrated GPUs.
+
+In our second contribution, we investigate how a query processing systems can automatically adapt its low-level operator implementation to the processor it runs on. First, we perform an extensive experimental analysis of different implementations of two data processing operators on various CPUs, GPUs, and an Intel Xeon Phi coprocessor. We find that every processor requires specific implementations to achieve high performance, that heuristics derived from the analysis of one processor are not necessarily transferable to others, and that some processors are more difficult to optimize for than others. Then, we develop two algorithms to find a fast operator implementation at runtime, which differ in the amount of information they incorporate during their search. Our evaluation of these algorithms shows that it is necessary to exploit information about processor characteristics to reduce the search time for a fast implementation.
+
+In our third contribution, we focus on integrating query processing systems that run on the Java Virtual Machine (JVM) and those that execute native machine code. Concretely, we develop two approaches how to execute Java-based UDFs in a query processing engine written in C++. First, we transparently transform a tuple-based UDF into a UDF that processes an entire batch, which effectively eliminates the overhead of moving execution from the C++ engine into an embedded JVM. This approach works well if the UDF creates many objects, including Java strings. Second, we translate the UDF bytecode to LLVM IR and link it directly with the C++ engine. This approach works well if the UDF is compute-intensive.
+
+Our investigation into a variety of heterogeneous hardware and software scenarios shows that we often face similar challenges when integrating them. Thus, the techniques investigated and developed in this thesis constitute effective building blocks to extract performance from today's heterogeneous computing systems.},
+	author = {Rosenfeld, Viktor},
+	doi = {10.14279/depositonce-21138},
+	keywords = {heterogeneous query execution, heterogeneous CPU/GPU systems, GPU-accelerated data processing, hash aggregation, user-defined functions, heterogene Anfragebearbeitung, heterogene CPU/GPU-Systeme, GPU-beschleunigte Datenverarbeitung, Hash-Aggregierung, benutzerdefinierte Funktionen},
+	month = {jul},
+	school = {Technische Universit{\"a}t Berlin},
+	title = {Query Processing on Heterogeneous CPU/GPU Systems},
+	url = {https://doi.org/10.14279/depositonce-21138},
+	year = {2024}}

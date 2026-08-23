@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "Viktor Rosenfeld"
+
+news:
+
+  - { date: "June 2026",
+      label: "NVIDIA Technical Blog",
+      color: "#76B900",
+      text: "Since I joined NVIDIA, I have worked with an incredible team on GQE, a GPU-accelerated database. We have recently published our first article describing the architecture, <a href=\"https://developer.nvidia.com/blog/designing-gpu-accelerated-query-engines-with-nvidia-gqe\">Designing GPU-Accelerated Query Engines with NVIDIA GQE</a>, and also open-sourced the <a href=\"https://github.com/rapidsai/gqe\">GQE source code</a>." }
+
 publications:
 
   - { label: "DEBS 2024",
@@ -240,6 +248,25 @@ teaching:
 </div>
 </div>
 
+
+<!-- - - - - - - - - - - - - - - - -->
+
+<div id="news" class="row">
+  <div class="col-sm-12">
+    <h2>News</h2>
+    <dl class="dl-horizontal">
+      {% for news in page.news %}
+      <dt>
+        {{news.date}}
+        <span class="badge" style="background: {{news.color}}">{{news.label}}</span>
+      </dt>
+      <dd>
+        {{news.text}}
+      </dd>
+      {% endfor %}
+    </dl>
+  </div>
+</div>
 
 <!-- - - - - - - - - - - - - - - - -->
 
